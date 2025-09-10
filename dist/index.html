@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 text-center">
+        <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto mb-4 h-16">
+        <h5 class="text-xs">Reencuentro de Promociones</h5>
+        <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+    </div>
+    <div class="bg-custom-gray-600 p-4 flex justify-center">
+        <div class="text-white text-sm/8 w-fit">
+            <div class="flex items-center">
+                <span class="material-icons text-custom-yellow-400 mr-2">location_on</span>
+                <p>Club La Campiña</p>
+            </div>
+            <div class="flex items-center">
+                <span class="material-icons text-custom-yellow-400 mr-2">calendar_month</span>
+                <p>Domingo 05 Octubre, 2026</p>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div class="p-4 flex-col">
+        <div class="flex items-center mt-6">
+            <span class="material-icons text-white mr-2" style="font-size: 3.5rem">assignment_ind</span>
+            <div class="text-white">
+                <h5 class="font-extrabold">Participantes nuevos</h5>
+                <p class="text-xs">Debes registrarte para obtener el QR</p>
+            </div>
+        </div>
+        <button type="submit"
+            class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
+            Realizar mi registro
+        </button>
+        <div class="flex items-center my-6">
+            <span class="material-icons text-white mr-2" style="font-size: 3.5rem">qr_code</span>
+            <div class="text-white">
+                <h5 class="font-extrabold">Participantes registrados</h5>
+                <p class="text-xs">Deseo encontrar mi QR de registro</p>
+            </div>
+        </div>
+        <div class="bg-custom-gray-400 rounded shadow-md w-full px-4 pb-1 pt-4">
+            <form>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="text" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Número de DNI</label>
+                </div>
+            </form>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
+            Enviar
+        </button>
+    </div>
+
+</body>
+
+</html>
