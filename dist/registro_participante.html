@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 flex items-center">
+        <div class="mr-4">
+            <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto h-16">
+        </div>
+        <div>
+            <h5 class="text-xs">Reencuentro de Promociones</h5>
+            <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+        </div>
+    </div>
+    <div class="bg-custom-gray-600 p-4 flex justify-between text-white text-xs">
+        <div>Club La Campiña</div>
+        <div>Domingo 05 Octubre, 2026</div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+        <h5 class="font-extrabold text-white text-base mb-4">Registro de participante</h5>
+        <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
+            <div class="mb-8">
+                <h5 class="mb-2">Promoción</h5>
+                <div class="flex justify-between items-center">
+                    <span class="material-icons bg-custom-green-400 p-1 rounded">chevron_left</span>
+                    <span class="text-lg">2010 - 2019</span>
+                    <span class="material-icons bg-custom-green-400 p-1 rounded">chevron_right</span>
+                </div>
+                <div class="mt-4 grid grid-cols-4 gap-3 font-semibold text-base [&>button]:bg-white [&>button]:p-3 [&>button]:rounded">
+                    <button type="button" class="text-custom-gray-500" disabled>2009</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2010</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2011</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2012</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2013</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2014</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2015</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2016</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2017</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2018</button>
+                    <button type="button" class="hover:bg-custom-gray-500 hover:text-white hover:border-custom-green-400 border">2019</button>
+                    <button type="button" class="text-custom-gray-500" disabled>2020</button>
+                </div>
+            </div>
+
+            <form>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="text" id="dni" class="input-field" placeholder=" ">
+                    <label for="dni" class="input-label text-sm">DNI</label>
+                </div>
+
+                <!-- Campo de nombre -->
+                <div class="input-group mt-4">
+                    <input type="text" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Nombres</label>
+                </div>
+
+                <!-- Campo de apellidos -->
+                <div class="input-group mt-4">
+                    <input type="text" id="apellidos" class="input-field" placeholder=" ">
+                    <label for="apellidos" class="input-label text-sm">Apellidos</label>
+                </div>
+
+                <!-- Campo de teléfono -->
+                <div class="input-group">
+                    <input type="tel" id="telefono" class="input-field" placeholder=" ">
+                    <label for="telefono" class="input-label text-sm">Celular</label>
+                </div>
+            </form>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-2 rounded hover:bg-custom-green-500 transition duration-200 text-sm mt-4">
+            Registrar
+        </button>
+    </div>
+
+</body>
+
+</html>

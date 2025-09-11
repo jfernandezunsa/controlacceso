@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 flex items-center">
+        <div class="mr-4">
+            <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto h-16">
+        </div>
+        <div>
+            <h5 class="text-xs">Reencuentro de Promociones</h5>
+            <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+        </div>
+    </div>
+    <div class="bg-custom-gray-600 p-4 flex justify-between text-white text-xs">
+        <div>Club La Campiña</div>
+        <div>Domingo 05 Octubre, 2026</div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+        <div class="my-8 text-white flex flex-col items-center">
+            <h2 class="font-extrabold text-xl">Maria de la Gracia</h2>
+            <h2 class="font-extrabold text-xl">Choquecota Sivincha</h2>
+            <h5 class=" font-semibold">Promoción 2010</h5>
+            <div class="flex flex-row font-bold items-center gap-3 text-xl">
+                <span>14</span>
+                <span class="material-icons" style="font-size: 42px;">groups</span>
+                <span>60</span>
+            </div>
+            <button type="submit" class="text-custom-gray-900 w-full bg-custom-green-400 py-2 rounded hover:bg-custom-green-500 transition duration-200 text-sm mt-4 flex items-center">
+                <span>Invita a participar</span> <span class="material-icons">groups</span>
+            </button>
+        </div>
+        <h5 class="font-extrabold text-white text-base mb-4">Registro de Invitados</h5>
+        <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
+            <form>
+                <!-- Campo de nombre -->
+                <div class="input-group mt-4">
+                    <input type="text" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Nombres y Apellidos</label>
+                </div>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="text" id="dni" class="input-field" placeholder=" ">
+                    <label for="dni" class="input-label text-sm">DNI</label>
+                    <div class="text-xs mt-3 font-semibold">Al registrar el DNI facilita el ingreso de su invitado</div>
+                </div>
+                <div class="flex flex-row-reverse w-full"><span class="material-icons bg-custom-green-400 p-1 rounded">add</span></div>
+            </form>
+            <table class="w-full mt-4">
+                <tr class=" border-b-2 border-custom-green-400 mx-2">
+                    <td class="text-sm">Evelin Tanit Grados Malaga</td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+                <tr class=" border-b-2 border-custom-green-400">
+                    <td class="text-sm mx-2">Evelin Tanit Grados Malaga</td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+                <tr class=" border-b-2 border-custom-green-400 mx-2">
+                    <td class="text-sm">Evelin Tanit Grados Malaga</td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-2 rounded hover:bg-custom-green-500 transition duration-200 text-sm mt-4">
+            Registrar Invitados
+        </button>
+    </div>
+
+</body>
+
+</html>
