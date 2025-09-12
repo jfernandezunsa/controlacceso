@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 text-center">
+        <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto mb-4 h-16">
+        <h5 class="text-xs">Reencuentro de Promociones</h5>
+        <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+    </div>
+    <div class="bg-custom-blue-500 p-4 flex justify-center">
+        <div class="text-white w-fit font-extrabold">Ingreso al Sistema</div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+        <div class="bg-custom-gray-300 rounded shadow-md w-full px-4 pb-1 pt-4">
+            <form>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="text" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Usuario</label>
+                </div>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="password" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Contraseña</label>
+                </div>
+            </form>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
+            Acceder
+        </button>
+    </div>
+
+</body>
+
+</html>

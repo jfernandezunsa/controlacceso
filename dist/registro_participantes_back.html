@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 flex items-center">
+        <div class="mr-4">
+            <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto h-16">
+        </div>
+        <div>
+            <h5 class="text-xs">Reencuentro de Promociones</h5>
+            <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+        </div>
+    </div>
+    <div class="bg-custom-blue-500 p-3 flex justify-center">
+        <div class="text-white w-fit text-sm">Jose Luis Morales Carpio | Delegado 2001</div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+        <h5 class="font-extrabold text-white text-base mb-4">Registro de Participantes</h5>
+        <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
+            <form>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="text" id="dni" class="input-field" placeholder=" " style="border: solid #EA392B 1px">
+                    <label for="dni" class="input-label text-sm">DNI</label>
+                    <div class="text-xs mt-2 text-custom-yellow-700">Solo se permiten numeros en este campo</div>
+                </div>
+                <!-- Campo de nombre -->
+                <div class="input-group mt-4">
+                    <input type="text" id="nombre" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Nombres</label>
+                </div>
+                <!-- Campo de nombre -->
+                <div class="input-group mt-4">
+                    <input type="text" id="apellidos" class="input-field" placeholder=" ">
+                    <label for="nombre" class="input-label text-sm">Apellidos</label>
+                </div>
+                <!-- Campo de DNI -->
+                <div class="input-group mt-4">
+                    <input type="number" id="celular" class="input-field" placeholder=" ">
+                    <label for="dni" class="input-label text-sm">Celular</label>
+                </div>
+                <div class="flex flex-row-reverse w-full mt-[-12px]"><span class="material-icons bg-custom-green-400 p-1 rounded" style="font-size: 18px;">add</span></div>
+            </form>
+            <table class="w-full mt-8">
+                <tr class=" border-b-2 border-custom-green-400 mx-2">
+                    <td class="py-2">
+                        <div class="text-sm font-bold">Evelin Tanit Grados Malagas</div>
+                        <div class="text-xs">Cel. 959595955 | DNI: 12457896</div>
+                    </td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+                <tr class="border-b-2 border-custom-green-400">
+                    <td class="py-2">
+                        <div class="text-sm font-bold">Evelin Tanit Grados Malagassss</div>
+                        <div class="text-xs">Cel. 959595955 | DNI: 12457896</div>
+                    </td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+                <tr class=" border-b-2 border-custom-green-400 mx-2">
+                    <td class="py-2">
+                        <div class="text-sm font-bold">Evelin Tanit Grados Malagas</div>
+                        <div class="text-xs">Cel. 959595955 | DNI: 12457896</div>
+                    </td>
+                    <td><span class="material-icons text-custom-yellow-700">delete</span></td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-2 rounded hover:bg-custom-green-500 transition duration-200 text-sm mt-4">
+            Registrar Participantes
+        </button>
+        <div class="flex gap-2">
+            <button type="submit" class="w-full bg-custom-blue-500 text-white py-2 rounded  transition duration-200 text-sm mt-4">
+                Inicio
+            </button>
+            <button type="submit" class="w-full bg-yellow-500 py-2 rounded text-sm mt-4">
+                Salir
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

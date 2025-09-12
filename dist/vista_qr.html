@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 text-center">
+        <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto mb-4 h-16">
+        <h5 class="text-xs">Reencuentro de Promociones</h5>
+        <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+    </div>
+    <div class="bg-custom-gray-600 p-4 flex justify-center">
+        <div class="text-white text-sm/8 w-fit">
+            <div class="flex items-center">
+                <span class="material-icons text-custom-yellow-400 mr-2">location_on</span>
+                <p>Club La Campiña</p>
+            </div>
+            <div class="flex items-center">
+                <span class="material-icons text-custom-yellow-400 mr-2">calendar_month</span>
+                <p>Domingo 05 Octubre, 2026</p>
+            </div>
+        </div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+        <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
+            <div class="bg-white rounded w-fit mx-auto mt-6">
+                <img src="/src/assets/images/qr_code.png" alt="codigo QR" class="mx-auto">
+            </div>
+            <div class="my-4 flex flex-col items-center">
+                <h2 class="font-extrabold text-xl">Maria de la Gracia</h2>
+                <h2 class="font-extrabold text-xl">Choquecota Sivincha</h2>
+                <h5 class="font-semibold mt-2">Promoción 2010</h5>
+                <h5 class="mt-8 text-center text-lg px-8">Para ingresar muestre este codigo y presente su DNI</h5>
+                <a class="mt-8 text-custom-green-700" href="#">Ver lista de invitados</a>
+            </div>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 text-sm">Descargar QR</button>
+    </div>
+
+</body>
+
+</html>
