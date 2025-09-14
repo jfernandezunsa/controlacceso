@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Tailwind</title>
+    <title>Vista QR participante</title>
     <link href="output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../src/css/custom.css" rel="stylesheet">
@@ -43,7 +43,24 @@
         </div>
         <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 text-sm">Descargar QR</button>
     </div>
+    <!-- Superposición con fondo negro transparente -->
+    <div class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+        <div class="bg-custom-yellow-100 rounded shadow-md w-full max-w-xl p-4 text-sm relative">
+            <div>
+                <h3 class="font-extrabold">Activa tu código de acceso</h3>
+                <p>Comunicate con tu delegado <b>Alonzo Gonzalo Chicaña Huahuala Cel. 95996969 </b><br>o a la organización del evento al cel. 12457896</p>
+            </div>
+            <button class="absolute top-2 right-2" onclick="cerrarSuperposicion()">
+                <span class="material-icons bg-custom-yellow-700 p-1 rounded text-white text-xs" style="font-size: 12px">close</span>
+            </button>
+        </div>
+    </div>
 
+    <script>
+        function cerrarSuperposicion() {
+            document.querySelector( '.fixed' ).style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

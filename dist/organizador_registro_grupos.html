@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Delegados</title>
+    <title>Mi Proyecto Tailwind</title>
     <link href="output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../src/css/custom.css" rel="stylesheet">
@@ -31,34 +31,39 @@
         </div>
     </div>
     <div class="p-4 flex-col max-w-xl mx-auto">
-        <h5 class="font-extrabold text-white text-base mb-4">Registro de Delegados</h5>
+        <h5 class="font-extrabold text-white text-base mb-4">Registro de Grupos</h5>
         <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
             <form>
                 <!-- Campo de DNI -->
                 <div class="input-group mt-4">
                     <input type="text" id="dni" class="input-field" placeholder=" ">
-                    <label for="dni" class="input-label text-sm">DNI</label>
+                    <label for="dni" class="input-label text-sm">Año</label>
                 </div>
                 <!-- Campo de nombre -->
                 <div class="input-group mt-4">
                     <input type="text" id="nombre" class="input-field" placeholder=" ">
-                    <label for="nombre" class="input-label text-sm">Nombres</label>
+                    <label for="nombre" class="input-label text-sm">Denominación</label>
                 </div>
                 <!-- Campo de nombre -->
                 <div class="input-group mt-4">
                     <input type="text" id="apellidos" class="input-field" placeholder=" ">
-                    <label for="nombre" class="input-label text-sm">Apellidos</label>
+                    <label for="nombre" class="input-label text-sm">Número de Participantes</label>
                 </div>
                 <!-- Campo de DNI -->
                 <div class="input-group mt-4">
                     <input type="number" id="celular" class="input-field" placeholder=" ">
-                    <label for="dni" class="input-label text-sm">Celular</label>
+                    <label for="dni" class="input-label text-sm">Invitados por participante</label>
                 </div>
                 <!-- Campo de DNI -->
-                <div class="input-group mt-4">
-                    <input type="number" id="celular" class="input-field" placeholder=" ">
-                    <label for="dni" class="input-label text-sm">Año</label>
-                </div>
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 bg-white rounded-md peer-checked:border-custom-gray-500 peer-checked:bg-custom-green-500 transition-all duration-200 relative">
+                        <span class="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100">
+                            <span class="w-2 h-2 bg-white rounded-full"></span>
+                        </span>
+                    </span>
+                    <span class="text-gray-700 select-none pl-2">Validación de participantes</span>
+                </label>
             </form>
         </div>
         <div class="flex gap-2">
@@ -66,7 +71,7 @@
                 Cancelar
             </button>
             <button type="submit" class="w-full bg-custom-green-400 py-2 rounded text-sm mt-4">
-                Registrar Delegado
+                Registrar Grupo
             </button>
         </div>
     </div>
