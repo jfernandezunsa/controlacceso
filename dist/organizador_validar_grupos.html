@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos Registrados</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../src/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-custom-gray-500 antialiased">
+    <div class="bg-custom-gray-700 text-white p-4 flex items-center">
+        <div class="mr-4">
+            <img src="/src/assets/images/insignia-PFD.png" alt="insignia-PFD.png" class="mx-auto h-16">
+        </div>
+        <div>
+            <h5 class="text-xs">Reencuentro de Promociones</h5>
+            <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
+        </div>
+    </div>
+    <div class="bg-custom-blue-500 p-3">
+        <div class="flex justify-between items-center text-white text-xs max-w-xl mx-auto px-4">
+            <div>Jose Luis Morales Carpio<br>Organizador</div>
+            <div class="flex">
+                <span>Salir</span>
+                <span class="material-icons text-white pl-2" style="font-size: 1rem">logout</span>
+            </div>
+        </div>
+    </div>
+    <div class="p-4 flex-col max-w-xl mx-auto">
+
+        <h5 class="font-extrabold text-white text-base mb-4">Grupos registrados</h5>
+        <div class="bg-custom-gray-300 rounded shadow-md w-full p-4">
+            <table class="w-full">
+                <tr class=" border-b-2 border-custom-green-400 mx-2 text-xs font-bold">
+                    <th class="text-left">Participantes</th>
+                    <th class="text-left">Reg.</th>
+                    <th class="text-left">Val.</th>
+                    <th class="text-left"></th>
+                </tr>
+                <tr class=" border-b-2 border-custom-green-400 mx-2">
+                    <td class="py-2">
+                        <div class="text-sm font-bold">2024</div>
+                        <div class="text-xs">Alonzo Gonzalo Chicaña Huahuala | Cel. 12457896</div>
+                    </td>
+                    <td class="text-sm font-bold">45</td>
+                    <td class="text-sm font-bold">21</td>
+                    <td class="text-sm font-bold"><span class="material-icons text-custom-blue-600">arrow_circle_right</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex gap-2">
+            <button type="submit" class="w-full bg-custom-blue-500 text-white py-2 rounded  transition duration-200 text-sm mt-4" onclick="location='organizador_menu.html'">
+                Inicio
+            </button>
+            <button type="submit" class="w-full bg-custom-green-400 py-2 rounded text-sm mt-4">
+                Validar por personas
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

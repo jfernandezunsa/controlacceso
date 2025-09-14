@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Tailwind</title>
+    <title>Menu Organizador</title>
     <link href="output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../src/css/custom.css" rel="stylesheet">
@@ -48,10 +48,10 @@
             <span class="material-icons text-white mr-2" style="font-size: 3.5rem">assignment</span>
             <div class="text-white">
                 <h5 class="font-extrabold">Listado de Delegados</h5>
-                <p class="text-sm">Ver el listado de los participantes registrados y si ingresaron al evento</p>
+                <p class="text-sm">Ver el listado de los Delegado registrados en el evento</p>
             </div>
         </div>
-        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='organizador_listado_delegados.html'">
             Ver Listado de Delegados
         </button>
         <div class="flex items-center">
@@ -61,19 +61,20 @@
                 <p class="text-sm">Registrar participantes directamente en el sistema</p>
             </div>
         </div>
-        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='registro_participante.html'">
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='organizador_registro_participante.html'">
             Registrar Participantes
         </button>
         <div class="flex items-center">
-            <span class="material-icons text-white mr-2" style="font-size: 3.5rem">check_circle</span>
+            <span class="material-icons text-white mr-2" style="font-size: 3.5rem">search</span>
             <div class="text-white">
-                <h5 class="font-extrabold">Validar Participantes</h5>
-                <p class="text-sm">Verificar si las personas registradas pertenecen a su promoción</p>
+                <h5 class="font-extrabold">Buscar Participantes</h5>
+                <p class="text-sm">Revise los datos de los participantes</p>
             </div>
         </div>
-        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
-            Validar Participantes
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='organizador_buscar_participantes.html'">
+            Buscar Participantes
         </button>
+
         <div class="flex items-center">
             <span class="material-icons text-white mr-2" style="font-size: 3.5rem">assignment</span>
             <div class="text-white">
@@ -81,8 +82,19 @@
                 <p class="text-sm">Ver el listado de los participantes registrados y si ingresaron al evento</p>
             </div>
         </div>
-        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm">
-            Ver Listado
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='organizador_validar_grupos.html'">
+            Ver Listados
+        </button>
+
+        <div class="flex items-center">
+            <span class="material-icons text-white mr-2" style="font-size: 3.5rem">speed</span>
+            <div class="text-white">
+                <h5 class="font-extrabold">Aforo del Evento</h5>
+                <p class="text-sm">Vea el numero de personas en el evento en general y por agrupaciones</p>
+            </div>
+        </div>
+        <button type="submit" class="w-full bg-custom-green-400 py-3 rounded hover:bg-custom-green-500 transition duration-100 mt-4 mb-6 text-sm" onclick="location='organizador_control_aforo.html'">
+            Ver Aforo
         </button>
 
 

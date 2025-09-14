@@ -21,8 +21,14 @@
             <h5 class="text-xl font-bold">Padre Francois Delatte</h5>
         </div>
     </div>
-    <div class="bg-custom-blue-500 p-3 flex justify-center">
-        <div class="text-white w-fit text-sm">Zenaida Porroa Huayna | Organizador</div>
+    <div class="bg-custom-blue-500 p-3">
+        <div class="flex justify-between items-center text-white text-xs max-w-xl mx-auto px-4">
+            <div>Jose Luis Morales Carpio<br>Organizador</div>
+            <div class="flex">
+                <span>Salir</span>
+                <span class="material-icons text-white pl-2" style="font-size: 1rem">logout</span>
+            </div>
+        </div>
     </div>
     <div class="p-4 flex-col max-w-xl mx-auto">
         <h5 class="font-extrabold text-white text-base mb-4">Lista Delegados</h5>
@@ -54,14 +60,9 @@
                 </tr>
             </table>
         </div>
-        <div class="flex gap-2">
-            <button type="submit" class="w-full bg-custom-blue-500 text-white py-2 rounded  transition duration-200 text-sm mt-4">
-                Inicio
-            </button>
-            <button type="submit" class="w-full bg-yellow-500 py-2 rounded text-sm mt-4">
-                Salir
-            </button>
-        </div>
+        <button type="submit" class="w-full text-white bg-custom-blue-400 py-2 rounded hover:bg-custom-blue-500 transition duration-200 text-sm mt-4" onclick="location='organizador_menu.html'">
+            Regresar al menu
+        </button>
     </div>
 
 </body>
